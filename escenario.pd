@@ -1,0 +1,13 @@
+#N canvas 362 186 341 118 10;
+#N canvas 78 5 575 634 escenario 0;
+#X restore 30 38 pd escenario;
+#N canvas 519 234 404 232 struct-ladrillo 0;
+#X obj 19 120 filledpolygon color color 1 0 0 29 0 29 29 0 29 0 0;
+#X obj 19 152 filledpolygon -v pastilla 999 999 1 14 14 18 14 18 18
+14 18 14 14;
+#X obj 18 45 struct struct-ladrillo float x float y float color float
+pastilla;
+#X restore 30 62 pd struct-ladrillo;
+#X msg 172 46 \; pd-escenario vis 1;
+#X obj 172 21 loadbang;
+#X connect 3 0 2 0;
